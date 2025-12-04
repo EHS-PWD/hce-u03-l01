@@ -1,0 +1,25 @@
+{
+  "name": "hce-u03-l01-media-elements",
+  "version": "1.0.0",
+  "description": "Unit 3 Lesson 1 - Media Elements: User Information Table",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "test:watch": "jest --watch",
+    "lint:html": "htmlhint index.html"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "media-elements",
+    "table"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "htmlhint": "^1.1.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}

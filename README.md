@@ -1,4 +1,4 @@
-### **Lesson 10: Media Elements**
+### **Lesson 1: Images **
 
 #### **Objective:**
 
@@ -10,11 +10,11 @@ Students will enhance the user information table project by incorporating variou
 
 1. **Set Up Your New Project (if not done already):**
 
-   - Inside of the `user-table-project` folder, create a new folder called `images`. Search online for 3 headshots and save the user profile images `user1.jpg`, `user2.jpg`, and `user3.jpg` inside the `images` folder.
+   - Inside of the `student-code` folder, create a new folder called `images`. Search online for 3 headshots and save the user profile images `user1.jpg`, `user2.jpg`, and `user3.jpg` inside the `images` folder.
 
 2. **Update the HTML Structure to Include Image Elements:**
 
-   - Open the `index.html` file and update the table to include a new column for profile images. Add a `<th>` for "Profile Image" in the `<thead>` and update the `<tbody>` to include `<td>` elements for the images:
+   - Open the `tables.html` file and update the table to include a new column for profile images. Add a `<th>` for "Profile Image" in the `<thead>` and update the `<tbody>` to include `<td>` elements for the images:
 
    ```html
    <!DOCTYPE html>
