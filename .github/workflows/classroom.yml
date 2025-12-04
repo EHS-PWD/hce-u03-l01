@@ -1,0 +1,46 @@
+name: GitHub Classroom Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  test:
+    name: Autograding Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run HTML Linter
+        run: npm run lint:html
+        continue-on-error: true
+
+      - name: Run Jest Tests
+        run: npm test
+
+      - name: Autograding Reporter
+        uses: education/autograding@v1
+        if: always()
+        continue-on-error: true
